@@ -25,15 +25,15 @@
 
 #### TODO-List
 
-[ ] LLVM新手教程
+1. [ ] LLVM新手教程
 
-[ ] 编译原理的入门课程
+2. [ ] 编译原理的入门课程
 
-[ ] Haskell 趣学指南
+3. [ ] Haskell 趣学指南
 
-[ ] VUE3 入门
+4. [ ] VUE3 入门
 
-[ ] TypeScript 进阶
+5. [ ] TypeScript 进阶
 
 
 
