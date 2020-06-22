@@ -1,0 +1,36 @@
+@url =  http://localhost:3000/api
+
+### GET USER
+GET {{url}}/user
+
+###
+POST {{url}}/user
+Content-Type: application/json
+
+{
+    "username": "liuyang",
+    "password": "123456"
+}
+
+###
+DELETE {{url}}/user/5eed07be7499e82e7063e576
+
+###
+GET {{url}}/module
+
+###
+POST {{url}}/module
+Content-Type: application/json
+
+{
+    "modulename": "module4.rete",
+    "data": {
+        "fucku": "fuck"
+    },
+    "description": "test module",
+    "path": "test",
+    "user": "5eed52544e92ca18bcc2c2e1"
+}
+
+### DELETE module
+DELETE {{url}}/module

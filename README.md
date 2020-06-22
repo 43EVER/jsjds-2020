@@ -1,7 +1,37 @@
 #### 功能
 
-1. 图形化编程（类似UE4的蓝图）
-2. 用户可上传自定义模块
+1. 可视化编程
+   1. mininmap
+   2. module
+   3. 自定义component（填入JS代码）
+   4. 可以下载其他用户分享的 module
+   5. 可以新建 APP，新建的 APP 里可以选择要使用的 module
+   6. 可以选择自己的哪些 module 要共享出去
+2. 平台
+   1. 注册登录
+   2. 选择自己需要共享的 module
+
+
+
+#### 难点
+
+[x] module
+
+[x] 嵌入代码的 component
+
+[x] 带分类的 context menu
+
+[ ] 数据库设计
+
+
+
+###### 数据库设计
+
+User: Name, Password
+
+App: Name, Data, AppDescription
+
+Module: Name, Data, ModuleDescription
 
 
 
@@ -12,7 +42,7 @@
    1. 跳过语法分析的算法部分
    2. 跳过语法指导翻译
    3. 跳过中间代码及代码优化部分
-3. VUE 的学习，更优雅的实现
+3. rete.js，实现功能
 
 
 
@@ -23,7 +53,6 @@
 1. [x] LLVM新手教程
 2. [x] 编译原理的入门课程
 3. [ ] 学习 rete.js
-4. [ ] 复习 vue
 
 
 

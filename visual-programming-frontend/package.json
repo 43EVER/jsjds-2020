@@ -1,0 +1,37 @@
+{
+  "name": "visual-programming-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "core-js": "^3.6.5",
+    "element-ui": "^2.4.5",
+    "rete": "^1.4.4",
+    "rete-area-plugin": "^0.2.1",
+    "rete-connection-plugin": "^0.9.0",
+    "rete-connection-reroute-plugin": "^0.4.0",
+    "rete-context-menu-plugin": "^0.6.0-rc.1",
+    "rete-dock-plugin": "^0.2.1",
+    "rete-minimap-plugin": "^0.3.1",
+    "rete-module-plugin": "^0.4.1",
+    "rete-profiler-plugin": "^0.2.0",
+    "rete-vue-render-plugin": "^0.5.0",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-plugin-router": "~4.4.0",
+    "@vue/cli-plugin-vuex": "~4.4.0",
+    "@vue/cli-service": "~4.4.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "vue-cli-plugin-element": "~1.0.1",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
