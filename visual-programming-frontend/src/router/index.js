@@ -26,6 +26,11 @@ Vue.use(VueRouter)
         component: () => import('../components/Modules.vue')
       },
       {
+        path: '/bbs',
+        name: 'bbs',
+        component: () => import('../views/BBS.vue')
+      },
+      {
         path: '/',
         redirect: '/modules'
       }

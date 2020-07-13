@@ -16,13 +16,10 @@
                 </el-select>
             </el-col>
             <el-col :span="3">
-                <el-button @click="saveModule">保 存 模 块</el-button>
-            </el-col>
-            <el-col :span="3">
                 <el-input v-model="tmp.tmpInputModuleName"></el-input>
             </el-col>
-            <el-col :span="4">
-                <el-button @click="createModule(tmp.tmpInputModuleName)">创建模块</el-button>
+            <el-col :span="3">
+                <el-button @click="createModule(tmp.tmpInputModuleName)" type="primary">创建模块</el-button>
             </el-col>
         </el-row>
         <div class="editor">
@@ -84,6 +81,7 @@ export default {
             this.process();
             this.resize();
             this.curModuleName = name;
+            this.tmp.tmpModuleName = name;
         },
         async saveCurEditor(name) {
             this.modules[name].data = await this.editor.toJSON();
@@ -112,7 +110,8 @@ export default {
             };
             this.rawModulesLocal.push(name);
             // console.log(this.rawModulesLocal)
-            await this.loadModule(moduleName);
+            this.tmp.tmpInputModuleName = ''
+            await this.loadModule(name);
         },
         async saveModule() {
             if (this.curModuleName)

@@ -13,11 +13,13 @@
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
-        <el-button @click="closeDialog()">取 消</el-button>
+        <el-button @click="closeDialog()" type="danger">取 消</el-button>
         <el-button type="primary" @click="handleUpdate()">确 定</el-button>
       </div>
     </el-dialog>
-    <el-button @click="handleCreate">添 加 模 块</el-button>
+    <el-row type="flex" justify="start">
+      <el-button @click="handleCreate" icon="el-icon-circle-plus-outline" type="primary">添加模块</el-button>
+    </el-row>
     <el-table :data="rawModules" style="width: 100%;" v-loading="loading">
         <el-table-column type="expand">
            <template slot-scope="props">

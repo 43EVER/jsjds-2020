@@ -11,6 +11,10 @@
             <i class="el-icon-edit-outline"></i>
             <span slot="title">编辑器</span>
           </el-menu-item>
+          <el-menu-item index="/bbs">
+            <i class="el-icon-s-platform"></i>
+            <span slot="title">论坛</span>
+          </el-menu-item>
         </el-menu>
       </el-aside>
       <el-main style="margin: 0; padding: 0;">
